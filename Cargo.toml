@@ -1,0 +1,16 @@
+[package]
+name = "rocksdb-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+rand = "0.8.5"
+criterion = "0.5.1"
+divan = "0.1.14"
+rocksdb = "0.22.0"
+tempfile = "3.2"
+
+[[bench]]
+name = "rocks"
+path = "benches/rocks.rs"
+harness = false
